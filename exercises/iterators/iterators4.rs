@@ -15,6 +15,23 @@ pub fn factorial(num: u64) -> u64 {
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+    
+    fn hh(num1:u64, count:u64)->u64{
+        if num1==0||num1==1 {
+            count
+    
+        }else{
+          hh(num1-1 ,count*num1)
+            
+        }
+        
+
+
+    }
+    hh(num,1)
+    
+   
+   
 }
 
 #[cfg(test)]
